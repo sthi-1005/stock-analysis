@@ -12,11 +12,15 @@ This project is to refactor a VBA code which provides stock analysis to a ticker
 
 ### Run Times
 - Run time and results of refactored code:
-  - ![2017 Refactored Stock Analysis](Resources/VBA_Challenge_2017.png) <br/> Total Run Time: 0.1836 seconds <br/>
-  - ![2018 Refactored Stock Analysis](Resources/VBA_Challenge_2018.png) <br/> Total Run Time: 0.1875 seconds <br/>
+  - ![2017 Refactored Stock Analysis](resouces/VBA_Challenge_2018.png) ![2018 Refactored Stock Analysis](resouces/VBA_Challenge_2018.png)<br/> 
+  - Total Run Time: 
+     - 2017: 0.1836 seconds  <br/>
+     - 2018: 0.1875 seconds
 - Run time and results of original code:
-  - ![2017 Original Stock Anlaysis](Resources/Original_VBA_Challenge_2017.png) <br/> Total Run Time: 0.9727 seconds <br/>
-  - ![2018 Original Stock Anlaysis](Resources/Original_VBA_Challenge_2018.png) <br/> Total Run Time: 0.9805 seconds <br/>
+  - ![2017 Original Stock Anlaysis](resouces/Original_VBA_Challenge_2017.png) ![2018 Original Stock Anlaysis](resouces/Original_VBA_Challenge_2018.png)<br/> 
+  - Total Run Time: 
+     - 2017: 0.9727 seconds <br/>
+     - 2018: 0.9805 seconds <br/>
 
 ## Summary
 - There is a detailed statement on the advantages and disadvantages of refactoring code in general (3 pt).
