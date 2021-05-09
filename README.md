@@ -14,7 +14,7 @@ This project is to refactor a VBA code which provides stock analysis to a ticker
         ticker = tickers(i)
         ...
         For j = 2 to RowCount
-        ... #analysis per "j" ...
+        ... 'analysis per "j" ...
         Next j
         ...
         #print results for each i
@@ -30,11 +30,11 @@ This project is to refactor a VBA code which provides stock analysis to a ticker
       Next tickerIndex
       
       For i = 2 To RowCount
-      ... #analysis per "i" and store in respective array element tickerVolumes(i)...
+      ... 'analysis per "i" and store in respective array element tickerVolumes(i)...
       Next i
       
       For i = 0 to 11
-      ... # print tickerVolumes(i)
+      ... 'print tickerVolumes(i)
       next i    
       ```
       - the ticker array length is iterated first, and then the row analysis is iterated afterwards. This means instead of running "i x j" lines of code as seen in the original code, the refactored code runs "i + j" lines of code instead (in this case, "tickerIndex + i").
@@ -55,7 +55,7 @@ This project is to refactor a VBA code which provides stock analysis to a ticker
     ...
     Next J
     ```
-  - The Refactored code:
+  - In comparison, the Refactored code:
     ```
     yearValue = InputBox("What year would you like to run the analysis on?")
     ...
