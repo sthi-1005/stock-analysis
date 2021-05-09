@@ -30,8 +30,9 @@ This project is to refactor a VBA code which provides stock analysis to a ticker
       Next tickerIndex
       
       For i = 2 To RowCount
-      ... 'analysis per "i" and store in respective array element tickerVolumes(i) against tickers(tickerIndex)...
-      ...'If the next row's ticker doesn't match, increase the tickerIndex.
+      ... 'iterate through each row (i) and store the row information against each value array in its respective tickerIndex
+      ...
+      If the next row's ticker doesn't match, increase the tickerIndex.
         If Cells(i + 1, 1).Value <> Cells(i, 1).Value And tickerIndex < (UBound(tickers) - LBound(tickers)) Then
          '3d Increase the tickerIndex.
         tickerIndex = tickerIndex + 1
