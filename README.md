@@ -30,7 +30,12 @@ This project is to refactor a VBA code which provides stock analysis to a ticker
       Next tickerIndex
       
       For i = 2 To RowCount
-      ... 'analysis per "i" and store in respective array element tickerVolumes(i)...
+      ... 'analysis per "i" and store in respective array element tickerVolumes(i) against tickers(tickerIndex)...
+      ...'If the next row's ticker doesn't match, increase the tickerIndex.
+        If Cells(i + 1, 1).Value <> Cells(i, 1).Value And tickerIndex < (UBound(tickers) - LBound(tickers)) Then
+         '3d Increase the tickerIndex.
+        tickerIndex = tickerIndex + 1
+        End If
       Next i
       
       For i = 0 to 11
@@ -93,3 +98,4 @@ This project is to refactor a VBA code which provides stock analysis to a ticker
     - The script is great for investors who are interested in tracking only a specific set of stocks in their portfolio. In some cases, investors may diversify into many different stocks but those stocks may not neccesarily be a part of their "core" portfolio they wish to analyze.
   - Cons:
     - The tickers are hardcoded into the script, and not only are the numbers of tickers analyzed limited, but the code also will not readily anaylze any new tickers.
+    - The daily ticker data must be grouped by ticker and then sorted by oldest to newest date
