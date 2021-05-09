@@ -37,7 +37,7 @@ This project is to refactor a VBA code which provides stock analysis to a ticker
       ... 'print tickerVolumes(i)
       next i    
       ```
-      - the ticker array length is iterated first, and then the row analysis is iterated afterwards. This means instead of running "i x j" lines of code as seen in the original code, the refactored code runs "i + j" lines of code instead (in this case, "tickerIndex + i").
+      - the ticker array length is iterated first, and then the row analysis is iterated afterwards. As such, instead of running "i x j" lines of code as seen in the original code, the refactored code runs "i + j" lines of code (in this case, "tickerIndex + i").
       
       
       
